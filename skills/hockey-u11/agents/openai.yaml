@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hockey U11"
+  short_description: "Visos būsimos Sostinė Hockey U11 rungtynės iš hockey.lt"
+  default_prompt: "Panaudok hockey-U11: patikrink visas būsimas Sostinė Hockey U11 rungtynes oficialiame hockey.lt tvarkaraštyje ir pateik jas chronologine lentele su šaltiniu."
