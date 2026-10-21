@@ -1,8 +1,23 @@
 {
   "skill_name": "oras-top3",
   "evals": [
-    {"id": 1, "prompt": "Panaudok oras-top3 ir parodyk trijų miestų orus.", "expected_output": "Vilniaus, Ukmergės ir Klaipėdos orų prognozės lentelė su temperatūra, sąlygomis, Lietuvos laiku ir šaltiniu.", "files": []},
-    {"id": 2, "prompt": "Kokia temperatūra ir orų sąlygos Vilniuje, Ukmergėje ir Klaipėdoje?", "expected_output": "Aiškiai atskirta prognozė nuo tiesioginių stebėjimų, visi miestai ir prognozės laikas.", "files": []},
-    {"id": 3, "prompt": "Pateik oras-top3, bet jei meteo.lt neatsako, nieko nespėliok.", "expected_output": "Pasitaikius klaidai išgalvotos temperatūros nepateikiamos, pažymėta, kuriam miestui nepavyko gauti duomenų.", "files": []}
+    {
+      "id": 1,
+      "prompt": "Panaudok oras-top3 ir parodyk trijų miestų orus.",
+      "expected_output": "Trys miestai, dabartinė temperatūra ir sąlygos, laikas bei tikroji naudojama duomenų paslauga; nepatvirtintas pirminis tiekėjas neįvardijamas.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Kokia temperatūra ir orų sąlygos Vilniuje, Ukmergėje ir Klaipėdoje?",
+      "expected_output": "Aiškiai atskirtos dabartinės sąlygos nuo prognozės ir tiksliai pažymėtas šaltinis.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Pateik oras-top3 tik iš meteo.lt; kitų šaltinių nenaudok.",
+      "expected_output": "Tik patvirtinti meteo.lt prognozės duomenys arba aiškus pranešimas, kad jų nepavyko gauti.",
+      "files": []
+    }
   ]
 }
