@@ -11,14 +11,23 @@ Patikrink oficialų [Hockey Lietuva tvarkaraštį](https://www.hockey.lt/index.p
 ## Vykdymas
 1. Kiekvieno paleidimo metu nustatyk dabartinę Lietuvos datą ir laiką laiko juostoje `Europe/Vilnius`. Nenaudok seno anksčiau gauto tvarkaraščio kaip dabartinio.
 2. Atverk `https://www.hockey.lt/index.php/tvarkarasciai/12` („Tvarkaraščiai“). Rask komandos filtrą ir pasirink **Sostinė Hockey U11**. Jei įmanoma, naudok svetainės sugeneruotą filtruotą nuorodą su patikrintu `team_id`, tačiau nekonstruok ar neatspėk komandos ID.
-3. Jei komandos filtras nepasiekiamas, nagrinėk visus tvarkaraščio puslapius ir ieškok komandos tarp **namų** arba **svečių** komandų; prireikus naudok oficialų „U-11“ diviziono filtrą. Vien diviziono pavadinimo `U-11` nepakanka rungtynėms priskirti komandai.
+3. **ID patikra:** jokio `team_id` nelaikyk patvirtintu vien todėl, kad užklausa pateikia U-11 įrašus. Reikalauk oficialaus komandos puslapio arba išsaugotos naršyklės filtro parinkties, kuri tiesiogiai sieja `Sostinė Hockey U11` su ID. Šiuo metu bandyta `team_id=127728`, bet jo priklausymas komandai **dar nepatvirtintas**. Nenaudok jo kaip patikimo komandos identifikatoriaus, kol nepatikrinsi.
+5. Jei komandos filtras nepasiekiamas, nagrinėk visus tvarkaraščio puslapius ir ieškok komandos tarp **namų** arba **svečių** komandų; prireikus naudok oficialų „U-11“ diviziono filtrą. Vien diviziono pavadinimo `U-11` nepakanka rungtynėms priskirti komandai.
 4. Pereik per **visą puslapiavimą** (pvz. `?page=2`, `?page=3` ir toliau) iki paskutinio pasiekiamo puslapio. Jei svetainė teikia datų filtrus, nustatyk pradžią nuo šiandien ir neribok pabaigos data, nebent svetainė to techniškai reikalauja. Jei filtrai riboja datas, tęsk per visą prieinamą intervalą. Jei matomas rezultatų skaičius, palygink jį su surinktomis eilutėmis.
-5. Išsaugok tik tas rungtynes, kuriose aiškiai identifikuota tiksliai `Sostinė Hockey U11` (ne `Sostinė Hockey-2 U11`, ne `U10` ar `U12`). Išlaikyk skirtingas rungtynes net jei jos vyksta tą pačią dieną ar valandą.
-6. Įtrauk tik rungtynes, kurių Lietuvos vietinis pradžios laikas yra **vėlesnis už patikros momentą**; praėjusių, prasidėjusių ar pasibaigusių rungtynių nerodyk. Jei nurodyta tik data, o ne laikas, tos dienos įrašą pažymėk kaip nepatvirtintą pagal laiką ir atskirai paaiškink.
-7. Iš kiekvienos rungtynių eilutės surink datą, pradžios laiką, namų komandą, svečių komandą, areną ir tiesioginę rungtynių nuorodą, jeigu pateikta. Nežinomas reikšmes žymėk „nenurodyta“; nieko neatspėk.
-8. Pašalink tik **tikrus pasikartojimus** pagal oficialų rungtynių ID arba tą patį datą, laiką, namų ir svečių komandų derinį bei areną. Surikiuok viską nuo artimiausių iki vėliausių.
-9. Jei naršyklėje nesimato komandų pavadinimų (pvz., jie pateikti tik vaizduose), patikrink svetainės prieinamą HTML, komandų nuorodas, rungtynių detales arba naršyklės peržiūrą. **Nedaryk išvados apie komandą vien pagal laiką, areną ar U-11 divizioną.**
-10. Jei negali perskaityti visų rezultatų, paaiškink apribojimą, nurodyk patikrintą diapazoną ir **neteik dalinio sąrašo kaip pilno**. Nenaudok paieškos sistemos fragmentų kaip vienintelio viso tvarkaraščio įrodymo.
+6. Išsaugok tik tas rungtynes, kuriose aiškiai identifikuota tiksliai `Sostinė Hockey U11` (ne `Sostinė Hockey-2 U11`, ne `U10` ar `U12`). Išlaikyk skirtingas rungtynes net jei jos vyksta tą pačią dieną ar valandą.
+7. Įtrauk tik rungtynes, kurių Lietuvos vietinis pradžios laikas yra **vėlesnis už patikros momentą**; praėjusių, prasidėjusių ar pasibaigusių rungtynių nerodyk. Jei nurodyta tik data, o ne laikas, tos dienos įrašą pažymėk kaip nepatvirtintą pagal laiką ir atskirai paaiškink.
+8. Iš kiekvienos rungtynių eilutės surink datą, pradžios laiką, namų komandą, svečių komandą, areną ir tiesioginę rungtynių nuorodą, jeigu pateikta. Nežinomas reikšmes žymėk „nenurodyta“; nieko neatspėk.
+9. Pašalink tik **tikrus pasikartojimus** pagal oficialų rungtynių ID arba tą patį datą, laiką, namų ir svečių komandų derinį bei areną. Surikiuok viską nuo artimiausių iki vėliausių.
+10. Jei naršyklėje nesimato komandų pavadinimų (pvz., jie pateikti tik vaizduose), patikrink svetainės prieinamą HTML, komandų nuorodas, rungtynių detales arba naršyklės peržiūrą. **Nedaryk išvados apie komandą vien pagal laiką, areną ar U-11 divizioną.**
+11. Jei negali perskaityti visų rezultatų, paaiškink apribojimą, nurodyk patikrintą diapazoną ir **neteik dalinio sąrašo kaip pilno**. Nenaudok paieškos sistemos fragmentų kaip vienintelio viso tvarkaraščio įrodymo.
+
+## Diagnostika, jei komandų pavadinimai paslėpti
+
+- Palygink oficialų U-11 diviziono filtrą `https://www.hockey.lt/index.php/tvarkarasciai/12?div_id=47` su bandomuoju `https://www.hockey.lt/index.php/tvarkarasciai/12?team_id=127728`. Skirtingi eilučių kiekiai rodo, kad filtras veikia, bet **neįrodo**, kam priklauso `team_id`.
+- Jei naršymo priemonė grąžina tik tekstinį puslapį, ji gali praleisti paveikslėliuose ar nesusietuose HTML elementuose pateiktus komandų pavadinimus. Jei leidžiama, naudok interaktyvią naršyklę: rankiniu būdu pasirink `Sostinė Hockey U11` ir nukopijuok rezultato adresą.
+- Jei interaktyvi naršyklė leidžia, atverk „Inspect“ → „Network“ („Tinklas“), pasirink komandą, pažiūrėk, kuri užklausa pasikeitė, ir palygink `team_id` su komandos pavadinimu filtro `select/option` HTML. Niekada nenaudok slapukų, prieigos žetonų ar privačios prisijungimo informacijos kaip tvarkaraščio šaltinio.
+- Jei įrašai turi `game_id` nuorodas, patikrink kiekvieno įrašo oficialius rungtynių duomenis. Jei nuorodų nėra ir vienodo laiko U-11 rungtynių yra kelios, **nespėk varžovų**.
+- Jei pirmos datos vienos, o U-11 diviziono puslapyje yra vėlesnių datų, nevadink filtruoto sąrašo užbaigtu, kol nenustatei, ar filtro rezultatai turi puslapiavimą / datos apribojimus. Bandymas atverti nepatvirtintą `page` parametrą nėra puslapiavimo patikra.
 
 ## Atsakymo forma
 Pateik lietuviškai:
