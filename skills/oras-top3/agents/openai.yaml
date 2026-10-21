@@ -1,4 +1,4 @@
 interface:
   display_name: "Oras TOP 3"
-  short_description: "Vilniaus, Ukmergės ir Klaipėdos temperatūra bei oro sąlygos pagal meteo.lt."
-  default_prompt: "Pateik oras-top3: artimiausią Vilniaus, Ukmergės ir Klaipėdos orų prognozę pagal meteo.lt."
+  short_description: "Vilniaus, Ukmergės ir Klaipėdos aktualūs orai; aiškiai nurodomas tikras duomenų šaltinis."
+  default_prompt: "Pateik oras-top3: dabartinę Vilniaus, Ukmergės ir Klaipėdos temperatūrą bei oro sąlygas ir nurodyk faktiškai naudotą šaltinį."
