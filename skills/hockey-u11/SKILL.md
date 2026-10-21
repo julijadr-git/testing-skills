@@ -29,6 +29,15 @@ Patikrink oficialų [Hockey Lietuva tvarkaraštį](https://www.hockey.lt/index.p
 - Jei įrašai turi `game_id` nuorodas, patikrink kiekvieno įrašo oficialius rungtynių duomenis. Jei nuorodų nėra ir vienodo laiko U-11 rungtynių yra kelios, **nespėk varžovų**.
 - Jei pirmos datos vienos, o U-11 diviziono puslapyje yra vėlesnių datų, nevadink filtruoto sąrašo užbaigtu, kol nenustatei, ar filtro rezultatai turi puslapiavimą / datos apribojimus. Bandymas atverti nepatvirtintą `page` parametrą nėra puslapiavimo patikra.
 
+## Atsarginis metodas: rungtynių protokolai
+
+1. Jei komandos filtras neveikia, atverk oficialų U-11 tvarkaraštį su `div_id=47` ir fiksuok visas būsimas eilutes jų **nesuplakdamas** pagal vienodą datą ir laiką.
+2. Patikrink, ar kiekvienos eilutės HTML arba atveriamas elementas turi faktinį rungtynių `game_id` ir nuorodą į `/index.php/rungtyniu-statistika/73?game_id=...`. Nesugalvok ID ir nebandyk išvesti jo iš paeiliui einančių skaičių.
+3. Jei rastas konkrečios eilutės `game_id`, atverk jos statistiką ir patikrink, ar **bent viena** komanda tiksliai yra `Sostinė Hockey U11`. Tik tada įtrauk tą eilutę į patvirtintų rungtynių sąrašą.
+4. Protokolai su `game_id=10718` („Sostinė Hockey U11 – KSM STARTAS U11“) ir `game_id=10715` („Sostinė Hockey U11 – Elektrėnų SSC U11“) rodo, kad statistikos puslapis gali atskleisti pavadinimus, **bet neįrodo**, kad tai būsimos rungtynės ar kad jų ID susieti su dabartiniu tvarkaraščiu.
+5. Jei per tekstinį naršymą tvarkaraščio nuorodos paslėptos, atlik interaktyvų atvėrimą tik turint naršyklės galimybę; kitu atveju nurodyk, kad protokolo ir datos sąsaja nepatvirtinta.
+6. Paieškos sistemos rastą protokolą naudok tik kaip papildomą patikrinimą, o ne kaip visų būsimų rungtynių sąrašą.
+
 ## Atsakymo forma
 Pateik lietuviškai:
 
