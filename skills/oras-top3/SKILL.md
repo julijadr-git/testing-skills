@@ -13,6 +13,18 @@ Pateik artimiausią ateities orų **prognozę** Vilniui, Ukmergei ir Klaipėdai:
 - Vietovių kodai: https://api.meteo.lt/v1/places
 - Prognozės užklausa: `https://api.meteo.lt/v1/places/{place-code}/forecasts/long-term`
 
+## Rekomenduojamas vykdymas
+
+Jeigu agentas gali vykdyti Python programas ir turi interneto prieigą, paleisk iš šio įgūdžio katalogo:
+
+```bash
+python3 scripts/weather.py
+```
+
+Programa pati suranda tikruosius miestų kodus per `/places`, atlieka JSON užklausas, atrenka artimiausius būsimus prognozės įrašus ir išveda lentelę. Jai pakanka standartinės Python 3.9+ bibliotekos (laiko juostoms naudojamas `zoneinfo`). Jei programa rodo klaidą, **nepakeisk rezultato spėjimu**. Testams paleisk `python3 -m unittest discover -s evals -p 'test_*.py'` įgūdžio kataloge. Testai naudoja fiktyvius duomenis ir nereikalauja interneto.
+
+Jei agentas negali vykdyti kodo, naudok toliau aprašytą tiesioginių užklausų būdą. Tiesiog naršyklėje atidarytas JSON puslapis gali neturėti matomo turinio – tokiu atveju nelaikyk jo tinkamai nuskaitytu rezultatu.
+
 ## Vykdymas
 1. Kiekvieną kartą iš naujo patikrink meteo.lt duomenis. Jei turi interneto ar HTTP užklausų įrankį, naudok jį; jei ne, atvirai nurodyk, kad įgūdžio neįmanoma įvykdyti be duomenų prieigos.
 2. Vietovių sąraše surask tikslius Lietuvos vietovių pavadinimus Vilnius, Ukmergė ir Klaipėda bei jų `code`. Jei vietovių sąrašas neprieinamas, gali bandyti kodus `vilnius`, `ukmerge`, `klaipeda`, bet prieš naudodamas rezultatą patikrink API atsakymo `place.name` ir `place.countryCode` (`LT`).
