@@ -76,10 +76,8 @@ def run(fetch=fetch_json, now=None):
 
     ok = 0
     for city in CITIES:
-        code = codes.get(city.casefold())
+        code = codes.get(city.casefold()) or {"Vilnius": "vilnius", "Ukmergė": "ukmerge", "Klaipėda": "klaipeda"}[city]
         try:
-            if code is None:
-                raise ValueError("miesto nerasta vietovių sąraše" if not place_error else f"vietovių sąrašas nepasiekiamas: {place_error}")
             payload = fetch(f"{BASE}/places/{code}/forecasts/long-term")
             temp, condition, when = interpret(city, payload, now)
             ok += 1
