@@ -1,0 +1,23 @@
+{
+  "skill_name": "vilnius-events-finder",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Surask kultūrinius renginius Vilniuje 2026 m. spalio 24–25 d.",
+      "expected_output": "Struktūrizuotas renginių sąrašas su penkių šaltinių patikra, atskirais Bilietai.lt ir Kakava.lt koncertų rezultatais bei Vilniaus senojo teatro spektakliais.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Surask Vilniaus kultūrinius renginius 2026 m. lapkričio 7 d. ir pažymėk, jei trūksta bilietų kainų.",
+      "expected_output": "Visi privalomi laukai; kainos nespėjamos; nepatvirtinimai pažymėti.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Surask Vilniaus renginius 2026 m. spalio 26–24 d.",
+      "expected_output": "Paaiškinimas, kad datos intervalas netaisyklingas; paieška nevykdoma, kol intervalas nepataisytas.",
+      "files": []
+    }
+  ]
+}
