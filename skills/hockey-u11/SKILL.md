@@ -21,6 +21,21 @@ Patikrink oficialų [Hockey Lietuva tvarkaraštį](https://www.hockey.lt/index.p
 10. Jei naršyklėje nesimato komandų pavadinimų (pvz., jie pateikti tik vaizduose), patikrink svetainės prieinamą HTML, komandų nuorodas, rungtynių detales arba naršyklės peržiūrą. **Nedaryk išvados apie komandą vien pagal laiką, areną ar U-11 divizioną.**
 11. Jei negali perskaityti visų rezultatų, paaiškink apribojimą, nurodyk patikrintą diapazoną ir **neteik dalinio sąrašo kaip pilno**. Nenaudok paieškos sistemos fragmentų kaip vienintelio viso tvarkaraščio įrodymo.
 
+## Patvirtinta HTML struktūra (2026-10-22)
+
+Naudotojas nukopijavo komandos puslapio skilties „Artimiausios rungtynės“ visą HTML fragmentą. Jame yra `div.teams_item_block`, antraštė `div.teams_block_header`, ir `div.schedules table.wf`. **Pirmiausia surask bloką pagal antraštę**, nes `teams_item_block` puslapyje kartojasi.
+
+Skaitydamas kiekvieną `div.schedules table.wf > tbody > tr` praleisk antraštės eilutę su `th`, o rungtynių įrašams:
+
+1. `td.t_game_date` tekstas: `YYYY MM DD` ir `strong` laikas `HH:mm`; įvertink pagal Lietuvos laiko juostą ir palik tik būsimas rungtynes.
+2. Pirmasis ir antrasis `td.t_team`: atitinkamai namų ir svečių komanda. Pavadinimą imk iš vidinio `a[title]` (arba atsarginio `img[alt]`); nuoroda taip pat turi komandos profilį. **Paprastas `td` tekstas gali būti tuščias, nes komandos parodytos vaizdais.**
+3. `td.t_tpage a`: arena – matomas tekstas arba `title`.
+4. Patikrink, ar **viena iš dviejų** komandų yra tiksliai `Sostinė Hockey U11`, arba jos nuoroda rodo į `/komandos/sostine-hockey-u11/120641`. Neįtrauk kitos U11 komandos.
+5. Nepainiok `Baltija U11` su `Klaipėdos Balta U11`: 2026-10-31 14:35 įraše tikslus vardas `Baltija U11`, `/komandos/baltija-u11/77238`. 13:35 – `HC Klaipėda Balti U11`, 14:05 – `HC Klaipėda Mėlyni U11`. Visi trys įrašai yra Klaipėdos Akropolyje, „Sostinė Hockey U11“ – namų komanda.
+6. Blokas „Artimiausios rungtynės“ savaime negarantuoja **visų būsimų** datų. Visada papildomai atverk bloke esančią nuorodą „Visas tvarkaraštis“ į `https://www.hockey.lt/index.php/tvarkarasciai/12?team_id=120641`, patikrink jo rezultatų skaičių / puslapiavimą. Jei neprieinamas, sąrašą žymėk tik kaip „artimiausios patvirtintos rungtynės“.
+
+Ši struktūra nustatyta iš naudotojo pateikto HTML. Ji **neįrodo**, kad automatinio naršymo priemonės dabar pasiekia `hockey.lt`; prieigos klaidos atveju aiškiai pasakyk, jog nepavyko atlikti naujos patikros. Ankstesni HTML įrašai nėra nuolat galiojantis rungtynių tvarkaraštis.
+
 ## Diagnostika, jei komandų pavadinimai paslėpti
 
 - Pirmiausia bandyk komandos profilį `https://www.hockey.lt/index.php/komandos/sostine-hockey-u11/120641`. Šio adreso turinio automatinis pasiekiamumas 2026-10-21 nebuvo patvirtintas; niekada netvirtink, kad nuskaitei rungtynes, jei puslapis neatsidaro. Jei prieinamas tik „Artimiausios rungtynės“, pažymėk, kad visos būsimos datos nepatikrintos.
@@ -41,7 +56,7 @@ Patikrink oficialų [Hockey Lietuva tvarkaraštį](https://www.hockey.lt/index.p
 
 ## Patvirtintas pavyzdys (2026-10-21 ekrano nuotrauka)
 
-Komandos profilio skiltyje „Artimiausios rungtynės“ buvo matomos trys 2026-10-31 rungtynės Klaipėdos Akropolyje: 13:35 prieš „HC KLAIPĖDA BALTI U11“, 14:05 prieš „HC KLAIPĖDA MĖLYNI U11“, 14:35 prieš „KLAIPĖDOS BALTA U11“. „Sostinė Hockey U11“ nurodyta kaip namų komanda. Tai **istorinis patikrintos ekrano nuotraukos pavyzdys**, ne automatiškai naujausias tvarkaraštis. Nepriskirk jo kitos dienos naujai patikrai be naujų duomenų.
+Komandos profilio skiltyje „Artimiausios rungtynės“ buvo matomos trys 2026-10-31 rungtynės Klaipėdos Akropolyje: 13:35 prieš „HC KLAIPĖDA BALTI U11“, 14:05 prieš „HC KLAIPĖDA MĖLYNI U11“, 14:35 prieš „Baltija U11“. „Sostinė Hockey U11“ nurodyta kaip namų komanda. Tai **istorinis patikrintos ekrano nuotraukos pavyzdys**, ne automatiškai naujausias tvarkaraštis. Nepriskirk jo kitos dienos naujai patikrai be naujų duomenų.
 
 ## Atsakymo forma
 Pateik lietuviškai:
