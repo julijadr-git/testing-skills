@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vilniaus renginių paieška"
+  short_description: "Ieško Vilniaus kultūrinių renginių pagal datas ir pateikia patikrinamus duomenis"
+  default_prompt: "Surask Vilniaus kultūrinius renginius mano nurodytam laikotarpiui, laikydamasis vilnius-events-finder šaltinių ir patikros taisyklių."
