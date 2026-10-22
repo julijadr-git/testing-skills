@@ -32,6 +32,18 @@ Visuomet tikrink visas septynias kategorijas:
 
 Nenaudok Kavakare.com. Kitų organizatorių tinklalapius leidžiama naudoti **tik jau atrastiems** renginiams patikrinti. Atskirai ieškok koncertų abiejuose Bilietai.lt ir Kakava.lt, nepriklausomai nuo rezultatų kituose portaluose. Atskirai tikrink Vilniaus senojo teatro repertuarą, net jei jo spektaklių jau rado agregatoriai. Kiekviename iš keturių bendrųjų šaltinių išbandyk visų septynių kategorijų paiešką pagal miestą ir datą; naudok svetainės filtrus arba tikslines site: paieškas. Jei šaltinis neprieinamas, žymėk „šaltinis nepatikrintas“, o ne „renginių nėra“.
 
+## Nuosekli paieškos procedūra
+1. Sudaryk patikros žurnalą su visais **5 šaltiniais**, paieškos data ir būsenomis: `patikrinta`, `neprieinama`, `dar netikrinta`. Kiekvienam iš keturių bendrųjų portalų registruok septynias kategorijas atskirai; oficialiam Vilniaus senajam teatrui registruok jo repertuarą.
+2. Kiekviename iš keturių bendrųjų portalų ieškok Vilniaus renginių pagal nurodytą laikotarpį. Kiekvieną kategoriją atverk atskirai, jei portalas leidžia; jei filtro nėra arba jis neveikia, atlik atskirą tikslinę interneto paiešką su `site:`, data ir kategorijos raktažodžiais (lietuvių, prireikus anglų kalba). Nelaikyk nepasiekiamos kategorijos tuščia – pažymėk ją `nepatikrinta`.
+3. **Privalomi nepraleidžiami veiksmai:** atskirai ieškok koncertų Bilietai.lt ir Kakava.lt; atskirai atverk oficialų Vilniaus senojo teatro repertuarą ir tikrink abi datas. Jeigu šie veiksmai nepavyko, aiškiai pažymėk nesėkmę.
+4. Kiekvieną rastą renginio **seansą** iš karto registruok privalomos išvesties laukais. Neprirašyk papildomų seansų, kurių šaltinis nerodo. Pasižymėk kilmės portalą, konkretų puslapį ir prieštaringą informaciją.
+5. Atskirai patikrink renginių faktus pagal patikimumo hierarchiją, atskirk perkeltus / atšauktus renginius, sujunk tik tą patį seansą. Visoms neužtikrintoms reikšmėms naudok `Nenurodyta`, o įrašui – `Informacija nepatvirtinta`.
+6. **Tik po bazinės penkių šaltinių patikros** vykdyk papildomas paieškas pagal nerastas kategorijas, raktažodžių variantus ir datas. Skaičiuok papildomas paieškas iš eilės be naujo unikalaus seanso: naujas seansas skaitiklį atstato į nulį; trys nesėkmingos iš eilės užbaigia paiešką. Užfiksuok, ar ši sąlyga tikrai pasiekta.
+7. Prieš pateikdamas atsakymą sutikrink faktinių renginių įrašus su patikros žurnalu. Aiškiai įvardyk kiekvieną nepatikrintą portalą arba kategoriją, o ne teik bendrą teiginį, kad patikrinta viskas.
+
+### Patikros žurnalo formatas
+Po renginių sąrašo pateik trumpą suvestinę su kiekvienu iš penkių šaltinių, būsena, rastų **unikalių seansų** skaičiumi, nepatikrintomis kategorijomis / priežastimis. Skaičiai turi būti faktiškai suskaičiuoti iš paieškos, ne išgalvoti. Įrašyk, ar įvykdyta trijų bevaisių papildomų paieškų taisyklė; jei ne, įvardyk ribojimą. Nepainiok `šaltinis pasiekiamas` su `visos jo kategorijos patikrintos`.
+
 ## Paieškos užbaigimas
 Tik atlikęs pradinius patikrinimus visuose 5 šaltiniuose, vykdyk papildomas tikslines paieškas kitais raktažodžiais. Baik po **3 iš eilės papildomų paieškų, nesuradusių nė vieno naujo unikalaus seanso**. Jei įrankių ar svetainių ribojimai neleidžia to įvykdyti, sąžiningai pažymėk, kurios dalys nepatikrintos. Neteik išsamumo garantijos.
 
