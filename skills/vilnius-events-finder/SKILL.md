@@ -44,6 +44,21 @@ Nenaudok Kavakare.com. Kitų organizatorių tinklalapius leidžiama naudoti **ti
 ### Patikros žurnalo formatas
 Po renginių sąrašo pateik trumpą suvestinę su kiekvienu iš penkių šaltinių, būsena, rastų **unikalių seansų** skaičiumi, nepatikrintomis kategorijomis / priežastimis. Skaičiai turi būti faktiškai suskaičiuoti iš paieškos, ne išgalvoti. Įrašyk, ar įvykdyta trijų bevaisių papildomų paieškų taisyklė; jei ne, įvardyk ribojimą. Nepainiok `šaltinis pasiekiamas` su `visos jo kategorijos patikrintos`.
 
+## Atsarginė paieška ir būsenų atskyrimas
+Kiekvienam privalomam šaltiniui ir kiekvienai aktualiai jo kategorijai taikyk šią seką:
+1. Mėgink atverti svetainės datos / miesto / kategorijos filtrą ir konkrečius renginių puslapius.
+2. Jei filtrai nepateikia duomenų, neveikia arba puslapis dinaminis, atlik tikslinę interneto paiešką: `site:DOMENAS Vilnius YYYY-MM-DD KATEGORIJA`. Išbandyk bent vieną alternatyvią datos formą arba sinonimą, jei pradinis bandymas neveiksmingas. Nenaudok kitų renginių portalų kaip naujų atradimo šaltinių.
+3. Jei paieška grąžina konkretų renginį, atverk jo puslapį ir patikrink miestą, datą, seansą. Jei tiesioginė patikra nepavyksta, palik renginį tik esant aiškiam pagrindžiančiam šaltiniui ir pažymėk `Informacija nepatvirtinta`.
+4. Žurnale fiksuok būseną **atskirai kiekvienai kategorijai**:
+   - `rasta`: identifikuotas bent vienas aktualus seansas (tai nereiškia, kad visi rastini renginiai surinkti);
+   - `paieškoje nerasta`: tinkamai veikusi pirminė ir atsarginė paieška neaptiko atitinkančių įrašų; tai nėra įrodymas, kad renginių nėra;
+   - `nepatikrinta`: svetainė, filtras arba paieška nepasiekiama / rezultatai neleidžia patikimai nustatyti datos ar miesto;
+   - `netaikoma`: tik šaltiniui, kuriame objektyviai nėra tokios kategorijos (pvz., oficialiam teatro repertuarui kino seansai).
+5. Jei tik viena kategorija patikrinta, nežymėk viso šaltinio `patikrinta`. Šaltinio bendra būsena `patikrinta iš dalies`, kol visos taikomos kategorijos neturi pagrįstos būsenos.
+6. Pateik atliktų atsarginių paieškų faktą, jų rezultatą ir nepatikrintų kategorijų sąrašą. Nepateik nulinio rastų renginių skaičiaus kaip visų realiai vykstančių renginių skaičiaus.
+
+**Skirtumas tarp būsenų:** `Paieškoje renginių nerasta` reiškia tik nesėkmingą atliktą paiešką, o `Nepatikrinta` reiškia, kad paieškos rezultato patikimai gauti nepavyko. Nepriskirk būsenos `paieškoje nerasta` vien todėl, kad interneto svetainė neatsidarė.
+
 ## Paieškos užbaigimas
 Tik atlikęs pradinius patikrinimus visuose 5 šaltiniuose, vykdyk papildomas tikslines paieškas kitais raktažodžiais. Baik po **3 iš eilės papildomų paieškų, nesuradusių nė vieno naujo unikalaus seanso**. Jei įrankių ar svetainių ribojimai neleidžia to įvykdyti, sąžiningai pažymėk, kurios dalys nepatikrintos. Neteik išsamumo garantijos.
 
